@@ -1,7 +1,7 @@
 
-## Estilo arquitetural de uma API REST em Node.Js
+# Estilo arquitetural de uma API REST em Node.Js
 
-# utilizando Node, Express e PostgreSQL
+## utilizando Node, Express e PostgreSQL
 
 
 	Basic authentication - Uma forma de autenticação que o próprio protocolo HTTP especifíca, é a forma de autenticação mais simples
@@ -13,11 +13,11 @@
 	utilizaremos e validaremos esse mesmo token para verificar se o usuário está apto a acessar o microserviço
 
 
-# Exemplo:
+## Exemplo:
 
-	o cliente faz uma requisição para o microserviço de produtos, o microserviço de produtos faz uma requisição para o microserviço de autenticação para validar o token, o ms de autenticação retorna se o token é válido e então o ms de produtos retorna os produtos para o cliente
+	o cliente faz uma requisição para o microserviço de produtos, o microserviço de produtos faz uma requisição para o microserviço de autenticação para validar o token, o microserviço de autenticação retorna se o token é válido e então o microserviço de produtos retorna os produtos para o cliente
 
-# CRUD de usuários
+## CRUD de usuários
 
 	GET users
 	GET users/:uuid
@@ -26,7 +26,7 @@
 	DELETE users/:uuid
 
 
-# autenticação de token
+## autenticação de token
 
 	POST /token
 	POST /token/validate
