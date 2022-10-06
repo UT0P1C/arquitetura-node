@@ -1,7 +1,7 @@
 
 # Estilo arquitetural de uma API REST em Node.Js
 
-## utilizando Node, Express e PostgreSQL
+## utilizando Typescript, Node e Express
 
 
 	Basic authentication - Uma forma de autenticação que o próprio protocolo HTTP especifíca, é a forma de autenticação mais simples

@@ -30,6 +30,27 @@ usersRoute.post("/users", (req: Request, res: Response, next: NextFunction) => {
 	res.status(201).send(user);
 });
 
+//metodo PUT para Update
+
+usersRoute.put("/users/:uuid", (req: Request<{ uuid: String}>, res: Response, next: NextFunction) => {
+	const uuid = req.params.uuid;
+
+	const modifiedUser = req.body;
+
+	modifiedUser.uuid = uuid;
+
+	res.status(200).json({modifiedUser})
+});
+
+
+//metodo DELETE para Delete
+
+usersRoute.delete("/users/:uuid", (req: Request<{uuid: String}>, res: Response, next: NextFunction) => {
+	const uuid = req.params.uuid;
+
+	res.status(200).json({message: "usuário deletado com sucesso"});
+});
+
 
 
 export default usersRoute;

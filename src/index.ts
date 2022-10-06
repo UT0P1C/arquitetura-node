@@ -1,6 +1,8 @@
-import express, {Request, Response, NextFunction} from "express";
+import express, {Request, Response, NextFunction, urlencoded} from "express";
 
 import usersRoute from "./routes/usersRoute";
+
+import statusRoute from "./routes/statusRoute";
 
 
 //configurações
@@ -8,13 +10,11 @@ const app = express();
 
 app.use(express.json());
 
+app.use(express.urlencoded({extended: true}));
+
 app.use(usersRoute);
 
-
-//rotas
-app.get("/status", (req: Request, res: Response, next: NextFunction) => {
-	res.status(200).json({message: "okay"});
-});
+app.use(statusRoute);
 
 
 //inicialização na porta 3000
