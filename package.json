@@ -1,0 +1,18 @@
+{
+  "name": "estilo-arquitetural-node",
+  "version": "1.0.0",
+  "description": "Basic authentication - Uma forma de autenticação que o próprio protocolo HTTP especifíca, é a forma de autenticação mais simples",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./",
+	"build": "tsc -p ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.8.2",
+    "typescript": "^4.8.4"
+  }
+}
